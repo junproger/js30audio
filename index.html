@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="MobileOptimized" content="width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <title>The Art of Customize #1</title>
+    <link rel="icon" href="./assets/favicon2.ico">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<!-- body block -->
+<body class="body">
+	<!-- outer container -->
+    <div class="wrapper">
+		<!-- header block -->
+        <header class="header">
+			<div class="logo"></div>
+			<h1 class="slug"><a href="./index.html">The Art of Customize</a></h1>
+			<nav id="menu" class="menu">
+				<div id="list" class="list none">
+					<button type="button" class="button" name="solovey">Соловей</button>
+					<button type="button" class="button" name="drozd">Дрозд</button>
+					<button type="button" class="button" name="malinovka">Малиновка</button>
+					<button type="button" class="button" name="zhavoronok">Жаворонок</button>
+					<button type="button" class="button" name="slavka">Славка</button>
+				</div>
+				<h3 id="waldo" class="quote">&laquo;Every artist was first an amateur&raquo; <br /> – Ralph Waldo.</h3>
+				<h3 id="klimt" class="quote none">&laquo;Art is a line around your thoughts&raquo; <br /> – Gustav Klimt.</h3>
+			</nav>
+		</header>
+		<!-- main block -->
+		<main class="main">
+			<!-- gradient layer -->
+			<div id="block" class="block">
+				<!-- entry block -->
+				<div id="entry" class="entry">
+					<!-- birds block -->
+					<div id="birds" class="birds">
+						<p class="phrase1">If you want to soothe your frail nerves, then go listen to the voices of the birds,
+						</p>
+					</div>
+					<!-- metal block -->
+					<div id="metal" class="metal change">
+						<p class="phrase2">Or if your infernal nerves are just fine, then go listen to the sounds of the metal!
+							<span class="nothere">No birds there!</span>
+						</p>
+					</div>
+				</div>
+				<!-- voice block -->
+				<div id="voice" class="voice none" style="background-image: ">
+					<audio src="./assets/audio/forest.mp3" preload="auto" loop id="audiovoice" name="audiovoice" class="audiovoice" data-status="stasis">Your browser doesn't support the audio playback.</audio>
+					<button type="button" id="playvoice" name="playvoice" class="playvoice"data-object="audiovoice"></button>
+				</div>
+				<!-- audio block -->
+				<div id="audio" class="audio none" style="background-image: ">
+					<audio src="./assets/music/kuvalda.mp3" preload="auto" id="audiosound" name="audiosound" class="audiosound" data-status="stasis" data-track="kuvalda">Your browser doesn't support the audio playback.</audio>
+					<div id="audiodesign" class="audiodesign">
+						<div id="player" class="player">
+							<div id="playbar" class="playbar">
+								<div id="control" class="control">
+									<button type="button" id="backward" name="backward" class="backward"></button>
+									<button type="button" id="playsound" name="playsound" class="playsound" data-object="audiosound"></button>
+									<button type="button" id="forward" name="forward" class="forward"></button>
+								</div>
+								<form id="meters" class="meters">
+									<span id="inform" class="inform">Track &nbsp; information</span>
+									<input type="range" value="0" step="1" min="0" max="" id="timeline" name="timeline" class="timeline">
+									<!-- <output for="timeline" id="timeshow" name="timeshow" class="timeshow" value=""></output> -->
+									<span><span id="passed" class="passed">00:00</span><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span id="total" class="total">00:00</span></span>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- footer block -->
+		<footer class="footer">
+			<span class="siteinfo">&copy;</span>
+			<span class="siteinfo">2022</span>
+			<a href="https://github.com/junproger" class="siteinfo github">junproger</a>
+			<a href="https://rs.school/js-stage0/" class="school"></a>
+		</footer>
+	</div>
+	<div id="addon" class="addon">
+		<svg width="0" height="0" class="hide">
+			<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="rss">
+				
+			</symbol>
+		</svg>
+	</div>
+	<!-- javascript -->
+	<script src="./script.js">
+	</script>
+</body>
+</html>
